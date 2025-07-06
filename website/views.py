@@ -6,7 +6,7 @@ def about(requests):
     return render(requests , "website/about.html")
 def contact(requests):
     return render(requests , "website/contact.html")
-def doctor(requests):
-    return render(requests , "website/doctor.html")
+def post(requests):
+    return render(requests , "website/post.html")
 
 # Create your views here.
