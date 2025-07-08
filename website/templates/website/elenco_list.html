@@ -1,0 +1,22 @@
+{% extends "website/base.html" %}
+{% block title %}Elenco Completo{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Elenco Completo</h1>
+<div class="container">
+  <div class="row">
+    {% for ator in elenco %}
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="{{ ator.imagem|default:'https://via.placeholder.com/286x180' }}" class="card-img-top" alt="{{ ator.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ ator.nome }}</h5>
+          <p class="card-text">{{ ator.apelido }}</p>
+          <a href="{% url 'elenco' ator.id %}" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
