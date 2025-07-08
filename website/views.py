@@ -54,7 +54,7 @@ Lexie Grey é a irmã mais nova de Meredith e também cirurgiã geral. Conhecida
         "apelido": "Yang",
         "descricao": """
 Cristina Yang é uma cirurgiã cardiotorácica brilhante e ambiciosa, conhecida por sua dedicação extrema à carreira e sua personalidade direta e muitas vezes impetuosa. Sua amizade profunda com Meredith Grey é um dos pilares emocionais da série, mostrando um relacionamento intenso e cheio de apoio mútuo. Cristina enfrenta desafios pessoais e profissionais, buscando sempre ser a melhor em sua área, mesmo que isso custe relacionamentos e conforto pessoal. Sua jornada destaca temas de empoderamento, ética médica e auto-descoberta.""",
-        "imagem": ""
+        "imagem": "website/img/cristina.jpg"
     },
     {
         "id": 6,
@@ -64,7 +64,7 @@ Cristina Yang é uma cirurgiã cardiotorácica brilhante e ambiciosa, conhecida 
         "apelido": "Callie",
         "descricao": """
 Callie Torres é uma cirurgiã ortopédica talentosa, que traz para a série uma forte presença feminina e diversidade. Sua personalidade vibrante e às vezes impulsiva contrasta com seu profissionalismo e cuidado com os pacientes. Ao longo da série, Callie enfrenta vários desafios pessoais, incluindo relacionamentos complexos e questões de identidade. Ela é uma personagem que demonstra crescimento, vulnerabilidade e força, contribuindo para a representação de temas sociais relevantes na narrativa.""",
-        "imagem": ""
+        "imagem": "website/img/callie.jpg"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@ Callie Torres é uma cirurgiã ortopédica talentosa, que traz para a série uma
         "apelido": "Nazi",
         "descricao": """
 Miranda Bailey é uma cirurgiã geral rigorosa, reconhecida pelo seu alto padrão profissional e por sua capacidade de liderança dentro do hospital. Embora inicialmente receba o apelido “Nazi” devido ao seu estilo autoritário, ao longo da série sua humanidade, cuidado e dedicação à formação dos residentes são evidentes. Bailey é um exemplo de força feminina na medicina, enfrentando desafios pessoais e profissionais e mantendo-se uma figura respeitada e admirada.""",
-        "imagem": ""
+        "imagem": "website/img/mirandabailey.jpg"
     },
     {
         "id": 8,
@@ -84,7 +84,7 @@ Miranda Bailey é uma cirurgiã geral rigorosa, reconhecida pelo seu alto padrã
         "apelido": "Jo",
         "descricao": """
 Jo Wilson é uma cirurgiã geral que enfrenta uma trajetória marcada por dificuldades pessoais e superação. Sua história inclui um passado difícil, que impacta suas relações e sua confiança, mas também a motiva a buscar excelência na medicina. Jo é uma personagem complexa, mostrando vulnerabilidade e força, e sua jornada aborda temas como resiliência, identidade e amor.""",
-        "imagem": ""
+        "imagem": "website/img/jo.jpg"
     },
     {
         "id": 9,
@@ -94,7 +94,7 @@ Jo Wilson é uma cirurgiã geral que enfrenta uma trajetória marcada por dificu
         "apelido": "Addison",
         "descricao": """
 Addison Montgomery é uma especialista em obstetrícia, ginecologia e neonatologia, reconhecida por sua competência e estilo sofisticado. Sua personalidade forte e às vezes difícil cria tensões e alianças dentro do hospital. Addison traz para a série temas ligados à medicina feminina e às complexidades das relações pessoais, equilibrando carreira e vida afetiva em sua trajetória.""",
-        "imagem": ""
+        "imagem": "website/img/addison.jpg"
     },
     {
         "id": 10,

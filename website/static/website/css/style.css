@@ -15,7 +15,7 @@ body, html {
 
 #mainNav .navbar-brand,
 #mainNav .nav-link {
-  color: #ddd;
+  color: #ddd !important;
   font-weight: 600;
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -279,63 +279,33 @@ margin-bottom: 50px;
   transform: scale(1.05);
   box-shadow: 0 4px 15px #374f70;
 }
-.butao {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: gray;
-  border: none;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1) brightness(2);
+  background-image: none !important; /* remove o ícone padrão */
   width: 3rem;
   height: 3rem;
-}.img-container {
-  width: 100%;
-  border-radius: 10px;
-  height: 550px; /* Tamanho fixo para todas as imagens */
-  overflow: hidden;
+  position: relative;
 }
 
-.img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: translate(-50%, -50%);
 }
 
-.custom-card {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.carousel-control-prev-icon::after {
+  transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.custom-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  height: 100%;
-}
-
-.card-title {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.card-text {
-  font-size: 0.95rem;
+.carousel-control-next-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
