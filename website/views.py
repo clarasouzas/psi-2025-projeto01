@@ -14,7 +14,7 @@ elenco_completo = [
         "apelido": "McDreamy",
         "descricao": """
 Derek Shepherd, conhecido como "McDreamy", é um dos neurocirurgiões mais renomados do Seattle Grace Hospital. Sua reputação se baseia tanto em suas habilidades cirúrgicas quanto em sua personalidade carismática e envolvente. Derek enfrenta desafios pessoais complexos, incluindo seu relacionamento turbulento com Meredith Grey. Apesar das dificuldades, ele mantém uma postura profissional exemplar e é considerado uma figura de liderança e inspiração para seus colegas. Sua jornada inclui momentos de tragédia, superação e realizações médicas que marcaram a série.""",
-        "imagem": ""
+        "imagem": "website/img/dereksherpherd.webp"
     },
     {
         "id": 2,
@@ -24,7 +24,7 @@ Derek Shepherd, conhecido como "McDreamy", é um dos neurocirurgiões mais renom
         "apelido": "McSteamy",
         "descricao": """
 Mark Sloan, apelidado de "McSteamy", é um cirurgião plástico famoso por sua habilidade técnica e personalidade extrovertida. Ele é conhecido por seu charme irresistível e relacionamentos amorosos complicados, que muitas vezes trazem tensão para o ambiente hospitalar. Apesar do seu lado mulherengo, Mark é profundamente dedicado ao seu trabalho e aos seus pacientes, sempre buscando os melhores resultados estéticos e funcionais. Sua história na série envolve redenção, amizade e momentos de vulnerabilidade que humanizam o personagem.""",
-        "imagem": ""
+        "imagem": "website/img/marksloan.jpg"
     },
     {
         "id": 3,
@@ -34,7 +34,7 @@ Mark Sloan, apelidado de "McSteamy", é um cirurgião plástico famoso por sua h
         "apelido": "Mer",
         "descricao": """
 Meredith Grey é a protagonista central da série, uma cirurgiã geral cuja trajetória é marcada por desafios pessoais e profissionais. Filha de uma renomada cirurgiã, Meredith luta para se destacar e encontrar sua própria identidade dentro do hospital Seattle Grace. Sua vida é permeada por altos e baixos emocionais, relacionamentos complexos e a constante pressão da medicina de emergência. Ao longo da série, Meredith evolui, tornando-se uma médica brilhante e uma mulher resiliente, que enfrenta perdas e conquistas com coragem.""",
-        "imagem": ""
+        "imagem": "website/img/fotomeredith.jpg"
     },
     {
         "id": 4,
@@ -44,7 +44,7 @@ Meredith Grey é a protagonista central da série, uma cirurgiã geral cuja traj
         "apelido": "Lexie",
         "descricao": """
 Lexie Grey é a irmã mais nova de Meredith e também cirurgiã geral. Conhecida por sua inteligência aguçada e memória fotográfica, Lexie traz uma combinação de vulnerabilidade e determinação para sua carreira médica. Ela luta para provar seu valor em um ambiente competitivo e para manter relacionamentos significativos, especialmente com colegas e familiares. Lexie é uma personagem sensível que passa por crescimento pessoal e profissional, deixando uma marca importante na série.""",
-        "imagem": ""
+        "imagem": "website/img/lexie.jpg"
     },
     {
         "id": 5,
