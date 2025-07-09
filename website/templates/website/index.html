@@ -4,7 +4,7 @@
 {% block title %} Início {% endblock title %}
 {% block titulo %}Greys Anatomy{% endblock titulo %}
 {% block subtitulo %}Página de Fans{% endblock subtitulo %}
-{% block header_image %}{% static 'website/img/fotodoelenco.jpeg' %}{% endblock header_image %}
+{% block header_image %}{% static 'website/img/indeximg.jpg' %}{% endblock header_image %}
 
 {% block content %}
 
@@ -31,7 +31,7 @@
 </section>
 
 <!-- Carousel wrapper -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel">
+<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="false">
 
  
   <!-- Inner -->
@@ -49,7 +49,7 @@
                   <div class="card-body text-center d-flex flex-column">
                     <h5 class="card-title">{{ ator.nome }}</h5>
                     <p class="card-text text-muted">{{ ator.apelido }}</p>
-                    <a href="{% url 'elenco' id_post=ator.id %}" class="btn btn-white mt-auto"><p>Ver mais</p></a>
+                    <a href="{% url 'elenco' id_post=ator.id %}" class="btn btn-white mt-auto">Ver mais</a>
                   </div>
                 </div>
               </div>
@@ -64,11 +64,11 @@
  <!-- Controls -->
   <div class="d-flex justify-content-center mb-4">
     <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true">‹</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">›</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Próximo</span>
     </button>
   </div>

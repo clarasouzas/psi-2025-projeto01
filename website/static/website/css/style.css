@@ -15,7 +15,7 @@ body, html {
 
 #mainNav .navbar-brand,
 #mainNav .nav-link {
-  color: #ddd !important;
+  color: #fff!important;
   font-weight: 600;
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -92,7 +92,7 @@ main a,
 main a:visited,
 .content a:visited,
 .block-content a:visited {
-  color: inherit !important;           /* mesma cor do texto */
+  color: #fff !important;           /* mesma cor do texto */
   text-decoration: none !important;    /* sem sublinhado */
   cursor: default !important;           /* cursor padrão texto */
   transition: color 0.3s ease;
@@ -107,7 +107,7 @@ a, a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #374f70 !important;
+  color: #fff !important;
   cursor: pointer !important;
   text-decoration: none !important;
 }
@@ -123,6 +123,7 @@ a:hover, a:focus, a:active {
 .btn.btn-white.mt-auto{
   border-style: solid;
   border-color:#374f70;
+  margin-bottom:15px ;
 }
 .btn-white p{
   color: #374f70;
@@ -289,4 +290,92 @@ footer .small {
 
 .carousel-control-next-icon::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* Estilo para a página do elenco completo */
+.elenco-container {
+  background-color: #010007;
+  padding: 2rem 0;
+}
+
+.elenco-container .card {
+  background-color: #010007;
+  border: 1px solid #374f70;
+  border-radius: 10px;
+  color: #ddd;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.elenco-container .card:hover {
+  box-shadow: 0 0 15px 4px #374f70;
+  transform: translateY(-5px);
+}
+
+.elenco-container .card-img-top {
+  height: 500px; /* atualmente */
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.elenco-container .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.elenco-container .card-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.elenco-container .card-text {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.elenco-container .btn-primary {
+  background-color: transparent;
+  border: 1px solid #374f70;
+  color: #374f70;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: flex-start;
+}
+
+.elenco-container .btn-primary:hover {
+  background-color: #374f70;
+  color: #fff;
+}
+
+/* Responsivo para colunas */
+@media (max-width: 992px) {
+  .elenco-container .card-img-top {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .elenco-container .card-img-top {
+    height: 200px;
+  }
+}
+.elenco-container p strong {
+  color: #89a7d0; /* um azul claro legal e suave */
+  font-weight: 700;
+}
+
+.elenco-container p {
+  color: #ccc; /* um cinza claro para o texto */
+
+  margin-bottom: 0.5rem;
 }

@@ -1,0 +1,41 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block title %}Detalhes do Ator - Greys Anatomy{% endblock %}
+
+{% block header_image %}{% static 'website/img/elenco-header.jpg' %}{% endblock %}
+
+{% block titulo %}{{ ator.nome }}{% endblock %}
+
+{% block subtitulo %}Interpretado por {{ ator.ator }}{% endblock %}
+
+{% block content %}
+  <section class="photo-gallery container py-9">
+    <div class="gallery-mosaic">
+      <img src="{% static 'website/img/galeria1.jpg' %}" alt="Foto 1" class="gallery-photo large" />
+      <img src="{% static 'website/img/galeria2.jpg' %}" alt="Foto 2" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria3.webp' %}" alt="Foto 3" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria4.jpg' %}" alt="Foto 4" class="gallery-photo medium" />
+      <img src="{% static 'website/img/galeria5.webp' %}" alt="Foto 5" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria6.jpg' %}" alt="Foto 6" class="gallery-photo large" />
+      <img src="{% static 'website/img/galeria7.jpg' %}" alt="Foto 7" class="gallery-photo large" />
+      <img src="{% static 'website/img/galeria8.jpg' %}" alt="Foto 8" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria9.jpg' %}" alt="Foto 9" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria10.jpg' %}" alt="Foto 10" class="gallery-photo large" />
+      <img src="{% static 'website/img/galeria11.jpg' %}" alt="Foto 11" class="gallery-photo large" />
+      <img src="{% static 'website/img/galeria12.webp' %}" alt="Foto 12" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria13.jpg' %}" alt="Foto 13" class="gallery-photo medium" />
+      <img src="{% static 'website/img/galeria14.webp' %}" alt="Foto 14" class="gallery-photo small" />
+      <img src="{% static 'website/img/galeria15.webp' %}" alt="Foto 15" class="gallery-photo small" />
+    </div>
+  </section>
+
+  <div class="container mb-5">
+    <div class="card elenco-container p-4">
+      <h3 class="text-white">{{ ator.nome }} ({{ ator.apelido }})</h3>
+      <p><strong>Especialidade:</strong> {{ ator.especialidade }}</p>
+      <p style="color:#ddd; font-size:1.1rem;">{{ ator.descricao }}</p>
+      <a href="{% url 'elenco_list' %}" class="btn btn-primary mt-3">Voltar ao Elenco</a>
+    </div>
+  </div>
+{% endblock %}
