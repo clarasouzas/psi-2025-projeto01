@@ -14,7 +14,24 @@ elenco_completo = [
         "apelido": "McDreamy",
         "descricao": """
 Derek Shepherd, conhecido como "McDreamy", é um dos neurocirurgiões mais renomados do Seattle Grace Hospital. Sua reputação se baseia tanto em suas habilidades cirúrgicas quanto em sua personalidade carismática e envolvente. Derek enfrenta desafios pessoais complexos, incluindo seu relacionamento turbulento com Meredith Grey. Apesar das dificuldades, ele mantém uma postura profissional exemplar e é considerado uma figura de liderança e inspiração para seus colegas. Sua jornada inclui momentos de tragédia, superação e realizações médicas que marcaram a série.""",
-        "imagem": "website/img/dereksherpherd.webp"
+        "imagem": "website/img/dereksherpherd.webp",
+        "imagens" : [
+        {"src": "website/img/derek1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/galeria2.jpg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/galeria3.webp", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/galeria4.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/galeria5.webp", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/galeria6.jpg", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/galeria7.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/galeria8.jpg", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/galeria9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/galeria10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/galeria11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/galeria12.webp", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/galeria13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/galeria14.webp", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/galeria15.webp", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 2,
@@ -132,10 +149,22 @@ def sobre(request):
 
 # VIEW DETALHE DE UM ATOR
 def elenco(request, id_post):
+    ator = elenco_completo[id_post - 1]
+
+    imagens = []
+    for foto in ator.get("imagens", []):  # Corrigido aqui de "galeria" para "imagens"
+        imagens.append({
+            "src": foto["src"],
+            "alt": ator["nome"],
+            "classe": foto["classe"],  # também mudou o nome para 'classe' no seu dicionário
+        })
+
     contexto = {
-        "ator": elenco_completo[id_post - 1]
+        "ator": ator,
+        "imagens": imagens,
     }
     return render(request, "website/elenco.html", contexto)
+
 
 # VIEW LISTA COMPLETA DO ELENCO
 def elenco_list(request):
