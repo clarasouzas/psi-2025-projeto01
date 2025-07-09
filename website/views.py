@@ -104,7 +104,7 @@ Addison Montgomery é uma especialista em obstetrícia, ginecologia e neonatolog
         "apelido": "Avery",
         "descricao": """
 Jackson Avery é um cirurgião plástico talentoso, membro de uma família renomada na medicina. Sua busca por reconhecimento profissional e pessoal o impulsiona a desafios constantes, enquanto ele navega por complexos relacionamentos amorosos e dinâmicas familiares. Avery é conhecido por sua ética de trabalho, carisma e capacidade de inovação na área cirúrgica.""",
-        "imagem": ""
+        "imagem": "website/img/jackson.jpg"
     },
     {
         "id": 11,
@@ -114,7 +114,7 @@ Jackson Avery é um cirurgião plástico talentoso, membro de uma família renom
         "apelido": "Furacão Amelia",
         "descricao": """
 Amelia Shepherd é uma neurocirurgiã talentosa e irmã de Derek Shepherd. Conhecida por sua personalidade forte e espírito independente, Amelia enfrenta batalhas pessoais, incluindo vícios e perdas, que marcam sua trajetória. Apesar das dificuldades, ela se destaca como uma médica excepcional, com uma paixão pela cirurgia e um compromisso profundo com seus pacientes.""",
-        "imagem": ""
+        "imagem": "website/img/amelia.jpg"
     }
 ]
 
