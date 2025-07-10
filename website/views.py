@@ -41,7 +41,24 @@ Derek Shepherd, conhecido como "McDreamy", é um dos neurocirurgiões mais renom
         "apelido": "McSteamy",
         "descricao": """
 Mark Sloan, apelidado de "McSteamy", é um cirurgião plástico famoso por sua habilidade técnica e personalidade extrovertida. Ele é conhecido por seu charme irresistível e relacionamentos amorosos complicados, que muitas vezes trazem tensão para o ambiente hospitalar. Apesar do seu lado mulherengo, Mark é profundamente dedicado ao seu trabalho e aos seus pacientes, sempre buscando os melhores resultados estéticos e funcionais. Sua história na série envolve redenção, amizade e momentos de vulnerabilidade que humanizam o personagem.""",
-        "imagem": "website/img/marksloan.jpg"
+        "imagem": "website/img/marksloan.jpg",
+        "imagens" : [
+        {"src": "website/img/mark1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/mark2.jpeg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/mark3.jpeg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/mark44.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/mark5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/mark6.jpg", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/mark7.avif", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/mark8.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/mark9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/mark10.avif", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/mark11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/mark12.webp", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/mark13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/mark15.webp", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/mark14.jpeg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 3,
@@ -51,7 +68,24 @@ Mark Sloan, apelidado de "McSteamy", é um cirurgião plástico famoso por sua h
         "apelido": "Mer",
         "descricao": """
 Meredith Grey é a protagonista central da série, uma cirurgiã geral cuja trajetória é marcada por desafios pessoais e profissionais. Filha de uma renomada cirurgiã, Meredith luta para se destacar e encontrar sua própria identidade dentro do hospital Seattle Grace. Sua vida é permeada por altos e baixos emocionais, relacionamentos complexos e a constante pressão da medicina de emergência. Ao longo da série, Meredith evolui, tornando-se uma médica brilhante e uma mulher resiliente, que enfrenta perdas e conquistas com coragem.""",
-        "imagem": "website/img/fotomeredith.jpg"
+        "imagem": "website/img/fotomeredith.jpg",
+         "imagens" : [
+        {"src": "website/img/grey1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/grey2.webp", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/grey3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/grey4.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/grey5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/grey6.avif", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/grey7.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/grey8.jpg", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/grey9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/grey10.webp", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/grey11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/grey12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/grey13.webp", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/grey14.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/grey15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 4,
