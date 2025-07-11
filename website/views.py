@@ -95,7 +95,24 @@ Meredith Grey é a protagonista central da série, uma cirurgiã geral cuja traj
         "apelido": "Lexie",
         "descricao": """
 Lexie Grey é a irmã mais nova de Meredith e também cirurgiã geral. Conhecida por sua inteligência aguçada e memória fotográfica, Lexie traz uma combinação de vulnerabilidade e determinação para sua carreira médica. Ela luta para provar seu valor em um ambiente competitivo e para manter relacionamentos significativos, especialmente com colegas e familiares. Lexie é uma personagem sensível que passa por crescimento pessoal e profissional, deixando uma marca importante na série.""",
-        "imagem": "website/img/lexie.jpg"
+        "imagem": "website/img/lexiee.png",
+         "imagens" : [
+        {"src": "website/img/lexie01.jpeg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/lexie2.jpg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/lexie3.webp", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/lexie04.jpeg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/lexie5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/lexie6.webp", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/lexie7.png", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/lexie8.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/lexie9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/lexie10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/lexie11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/lexie12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/lexie13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/lexie14.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/lexie15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 5,
@@ -105,7 +122,24 @@ Lexie Grey é a irmã mais nova de Meredith e também cirurgiã geral. Conhecida
         "apelido": "Yang",
         "descricao": """
 Cristina Yang é uma cirurgiã cardiotorácica brilhante e ambiciosa, conhecida por sua dedicação extrema à carreira e sua personalidade direta e muitas vezes impetuosa. Sua amizade profunda com Meredith Grey é um dos pilares emocionais da série, mostrando um relacionamento intenso e cheio de apoio mútuo. Cristina enfrenta desafios pessoais e profissionais, buscando sempre ser a melhor em sua área, mesmo que isso custe relacionamentos e conforto pessoal. Sua jornada destaca temas de empoderamento, ética médica e auto-descoberta.""",
-        "imagem": "website/img/cristina.jpg"
+        "imagem": "website/img/cristina.jpg",
+         "imagens" : [
+        {"src": "website/img/yang1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/yang2.jpg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/yang3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/yang4.avif", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/yang5.jpeg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/yang6.webp", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/yang7.jpeg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/yang8.jpeg", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/yang9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/yang10.webp", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/yang11.jpeg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/yang12.webp", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/yang13.jpeg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/yang14.webp", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/yang15.webp", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 6,
@@ -115,7 +149,24 @@ Cristina Yang é uma cirurgiã cardiotorácica brilhante e ambiciosa, conhecida 
         "apelido": "Callie",
         "descricao": """
 Callie Torres é uma cirurgiã ortopédica talentosa, que traz para a série uma forte presença feminina e diversidade. Sua personalidade vibrante e às vezes impulsiva contrasta com seu profissionalismo e cuidado com os pacientes. Ao longo da série, Callie enfrenta vários desafios pessoais, incluindo relacionamentos complexos e questões de identidade. Ela é uma personagem que demonstra crescimento, vulnerabilidade e força, contribuindo para a representação de temas sociais relevantes na narrativa.""",
-        "imagem": "website/img/callie.jpg"
+        "imagem": "website/img/callie.jpg",
+        "imagens" : [
+        {"src": "website/img/callie1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/callie2.webp", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/callie3.webp", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/callie4.webp", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/callie5.webp", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/callie6.webp", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/callie7.webp", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/callie8.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/callie9.webp", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/callie10.webp", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/callie11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/callie12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/callie13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/callie14.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/callie15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 7,
@@ -125,7 +176,24 @@ Callie Torres é uma cirurgiã ortopédica talentosa, que traz para a série uma
         "apelido": "Nazi",
         "descricao": """
 Miranda Bailey é uma cirurgiã geral rigorosa, reconhecida pelo seu alto padrão profissional e por sua capacidade de liderança dentro do hospital. Embora inicialmente receba o apelido “Nazi” devido ao seu estilo autoritário, ao longo da série sua humanidade, cuidado e dedicação à formação dos residentes são evidentes. Bailey é um exemplo de força feminina na medicina, enfrentando desafios pessoais e profissionais e mantendo-se uma figura respeitada e admirada.""",
-        "imagem": "website/img/mirandabailey.jpg"
+        "imagem": "website/img/mirandabailey.jpg",
+        "imagens" : [
+        {"src": "website/img/bailey1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/bailey2.jpg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/bailey3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/bailey4.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/bailey5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/bailey6.jpg", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/bailey7.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/bailey8.jpg", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/bailey9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/bailey10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/bailey11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/bailey12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/bailey13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/bailey14.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/bailey15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 8,
@@ -135,7 +203,24 @@ Miranda Bailey é uma cirurgiã geral rigorosa, reconhecida pelo seu alto padrã
         "apelido": "Jo",
         "descricao": """
 Jo Wilson é uma cirurgiã geral que enfrenta uma trajetória marcada por dificuldades pessoais e superação. Sua história inclui um passado difícil, que impacta suas relações e sua confiança, mas também a motiva a buscar excelência na medicina. Jo é uma personagem complexa, mostrando vulnerabilidade e força, e sua jornada aborda temas como resiliência, identidade e amor.""",
-        "imagem": "website/img/jo.jpg"
+        "imagem": "website/img/jo.jpg",
+        "imagens" : [
+        {"src": "website/img/jo1.jpg", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/jo2.webp", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/jo3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/jo4.avif", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/jo5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/jo6.jpg", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/jo7.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/jo8.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/jo9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/jo10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/jo11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/jo12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/jo13.jpg", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/jo14.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/jo15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 9,
@@ -145,7 +230,24 @@ Jo Wilson é uma cirurgiã geral que enfrenta uma trajetória marcada por dificu
         "apelido": "Addison",
         "descricao": """
 Addison Montgomery é uma especialista em obstetrícia, ginecologia e neonatologia, reconhecida por sua competência e estilo sofisticado. Sua personalidade forte e às vezes difícil cria tensões e alianças dentro do hospital. Addison traz para a série temas ligados à medicina feminina e às complexidades das relações pessoais, equilibrando carreira e vida afetiva em sua trajetória.""",
-        "imagem": "website/img/addison.jpg"
+        "imagem": "website/img/addison.jpg",
+         "imagens" : [
+        {"src": "website/img/addison1.webp", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/addison2.webp", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/addison3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/addison13.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/addison5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/addison6.avif", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/addison7.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/addison8.jpg", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/addison9.jpg", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/addison10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/addison11.jpg", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/addison12.jpg", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/addison14.avif", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/addison15.jpg", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/addison4.jpeg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 10,
@@ -155,7 +257,24 @@ Addison Montgomery é uma especialista em obstetrícia, ginecologia e neonatolog
         "apelido": "Avery",
         "descricao": """
 Jackson Avery é um cirurgião plástico talentoso, membro de uma família renomada na medicina. Sua busca por reconhecimento profissional e pessoal o impulsiona a desafios constantes, enquanto ele navega por complexos relacionamentos amorosos e dinâmicas familiares. Avery é conhecido por sua ética de trabalho, carisma e capacidade de inovação na área cirúrgica.""",
-        "imagem": "website/img/jackson.jpg"
+        "imagem": "website/img/jackson.jpg",
+        "imagens" : [
+        {"src": "website/img/avery13.webp", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/avery2.jpg", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/avery3.jpg", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/avery7.jpg", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/avery5.jpg", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/avery6.jpg", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/avery8.jpg", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/avery4.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/avery9.avif", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/avery10.jpg", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/avery11.avif", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/avery12.webp", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/avery1.webp", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/avery14.webp", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/avery15.jpg", "alt": "Foto 15", "classe": "small"},
+        ]
     },
     {
         "id": 11,
@@ -165,7 +284,24 @@ Jackson Avery é um cirurgião plástico talentoso, membro de uma família renom
         "apelido": "Furacão Amelia",
         "descricao": """
 Amelia Shepherd é uma neurocirurgiã talentosa e irmã de Derek Shepherd. Conhecida por sua personalidade forte e espírito independente, Amelia enfrenta batalhas pessoais, incluindo vícios e perdas, que marcam sua trajetória. Apesar das dificuldades, ela se destaca como uma médica excepcional, com uma paixão pela cirurgia e um compromisso profundo com seus pacientes.""",
-        "imagem": "website/img/amelia.jpg"
+        "imagem": "website/img/amelia.jpg",
+        "imagens" : [
+        {"src": "website/img/amelia1.webp", "alt": "Foto 1", "classe": "large"},
+        {"src": "website/img/amelia2.webp", "alt": "Foto 2", "classe": "small"},
+        {"src": "website/img/amelia3.webp", "alt": "Foto 3", "classe": "small"},
+        {"src": "website/img/amelia4.webp", "alt": "Foto 4", "classe": "medium"},
+        {"src": "website/img/amelia5.webp", "alt": "Foto 5", "classe": "small"},
+        {"src": "website/img/amelia6.webp", "alt": "Foto 6", "classe": "large"},
+        {"src": "website/img/amelia7.webp", "alt": "Foto 7", "classe": "large"},
+        {"src": "website/img/amelia8.webp", "alt": "Foto 8", "classe": "small"},
+        {"src": "website/img/amelia9.webp", "alt": "Foto 9", "classe": "small"},
+        {"src": "website/img/amelia10.webp", "alt": "Foto 10", "classe": "large"},
+        {"src": "website/img/amelia11.webp", "alt": "Foto 11", "classe": "large"},
+        {"src": "website/img/amelia12.webp", "alt": "Foto 12", "classe": "small"},
+        {"src": "website/img/amelia13.webp", "alt": "Foto 13", "classe": "medium"},
+        {"src": "website/img/amelia14.webp", "alt": "Foto 14", "classe": "small"},
+        {"src": "website/img/amelia15.webp", "alt": "Foto 15", "classe": "small"},
+        ]
     }
 ]
 
