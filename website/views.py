@@ -322,11 +322,11 @@ def elenco(request, id_post):
     ator = elenco_completo[id_post - 1]
 
     imagens = []
-    for foto in ator.get("imagens", []):  # Corrigido aqui de "galeria" para "imagens"
+    for foto in ator.get("imagens", []): 
         imagens.append({
             "src": foto["src"],
             "alt": ator["nome"],
-            "classe": foto["classe"],  # também mudou o nome para 'classe' no seu dicionário
+            "classe": foto["classe"], 
         })
 
     contexto = {
