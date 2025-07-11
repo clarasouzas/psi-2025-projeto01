@@ -1,10 +1,11 @@
 {% extends "website/base.html" %}
 {% load static %}
 
+
 {% block title %}Elenco Completo - Greys Anatomy{% endblock %}
-
+{% for at in elenco %}
 {% block header_image %}{% static 'website/img/elencoimg.webp' %}{% endblock %}
-
+{% endfor %}
 {% block titulo %}Elenco Completo{% endblock %}
 
 {% block subtitulo %}Conheça os personagens que marcaram a história do Seattle Grace Hospital{% endblock %}

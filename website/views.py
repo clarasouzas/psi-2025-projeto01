@@ -313,9 +313,19 @@ def index(request):
     }
     return render(request, "website/index.html", context)
 
+
+sobrecont = [
+    {"conteudosobre": """  <p>Grey’s Anatomy é uma premiada série de drama médico criada por Shonda Rhimes e exibida pela primeira vez em 2005. Ambientada no fictício Grey Sloan Memorial Hospital, em Seattle, a série acompanha a trajetória pessoal e profissional de cirurgiões enquanto enfrentam desafios médicos complexos, dilemas éticos e relações intensas.</p>
+                <p>Reconhecida por seu enredo envolvente e pela profundidade emocional dos personagens, Grey’s Anatomy tornou-se um marco na TV ao longo de suas muitas temporadas. A série discute temas como amizade, amor, perda, escolhas de carreira e questões sociais, tudo isso com roteiros dinâmicos e casos médicos que misturam realidade e drama.</p>
+                <p>Além de entreter, Grey’s Anatomy ajudou a lançar carreiras de atores e atrizes icônicos, e continua a emocionar fãs no mundo todo, mantendo-se relevante por sua capacidade de se reinventar e por seu compromisso com diversidade e representatividade."""},
+]
+
 # VIEW SOBRE
 def sobre(request):
-    return render(request, "website/sobre.html")
+    context = {
+        "sobrecont" : sobrecont,
+    }
+    return render(request, "website/sobre.html",sobrecont[0])
 
 # VIEW DETALHE DE UM ATOR
 def elenco(request, id_post):
@@ -328,10 +338,12 @@ def elenco(request, id_post):
             "alt": ator["nome"],
             "classe": foto["classe"], 
         })
-
+    
     contexto = {
         "ator": ator,
         "imagens": imagens,
+
+        
     }
     return render(request, "website/elenco.html", contexto)
 
