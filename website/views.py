@@ -323,9 +323,9 @@ sobrecont = [
 # VIEW SOBRE
 def sobre(request):
     context = {
-        "sobrecont" : sobrecont,
+        "conteudosobre": sobrecont[0]["conteudosobre"],
     }
-    return render(request, "website/sobre.html",sobrecont[0])
+    return render(request, "website/sobre.html", context)
 
 # VIEW DETALHE DE UM ATOR
 def elenco(request, id_post):
