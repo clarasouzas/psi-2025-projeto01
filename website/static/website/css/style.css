@@ -1,57 +1,65 @@
-/* Fundo uniforme para toda a página */
+/* -------------------------
+   RESET E BASE
+------------------------- */
 body, html {
-  background-color: #010007; /* cinza escuro uniforme */
-  color: #ddd;
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #010007; /* fundo escuro uniforme */
+  color: #ddd;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
 }
 
-/* Navbar com mesmo fundo */
+/* -------------------------
+   NAVBAR
+------------------------- */
 #mainNav {
   background-color: #010007;
   padding: 0.75rem 1rem;
+  border-bottom: 1px solid #374f70;
 }
 
 #mainNav .navbar-brand,
 #mainNav .nav-link {
-  color: #fff!important;
+  color: #fff !important;
   font-weight: 600;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.nav-link {
-  padding: 10px 15px; /* ou o que já tiver */
+#mainNav .nav-link {
+  padding: 10px 15px;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-link:hover {
+#mainNav .nav-link:hover {
   border-color: #374f70;
   color: #374f70;
 }
 
-/* Header masthead */
+/* -------------------------
+   HEADER
+------------------------- */
 header.masthead {
   position: relative;
-  height: 100vh;
+  height: 100vh; /* padrão */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: #eee;
   padding: 0 15px;
-  background-color: #010007; /* fallback caso imagem falhe */
+  background-color: #010007;
 }
 
 header.masthead::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #010007(0, 0, 0, 0.75);
+  background-color: rgba(1, 0, 7, 0.75);
   z-index: 1;
 }
 
@@ -75,113 +83,112 @@ header.masthead .subheading {
   text-shadow: 0 1px 4px rgba(0,0,0,0.9);
 }
 
-/* Área dos posts (main, content) com mesmo fundo */
-main, .content, .block-content {
+/* Header menor apenas na página do ator detalhado */
+body.ator-detalhe header.masthead {
+  height: 50vh;
+}
+
+/* -------------------------
+   ÁREA DE CONTEÚDO
+------------------------- */
+.container-centered,
+main.mb-4 {
   background-color: #010007;
   color: #ddd;
   padding: 2rem 1rem;
   max-width: 900px;
   margin: 0 auto;
+  line-height: 1.6;
   font-size: 1.1rem;
 }
 
-/* Links dentro dos posts para parecer texto comum */
-main a,
-.content a,
-.block-content a,
-main a:visited,
-.content a:visited,
-.block-content a:visited {
-  color: #fff !important;           /* mesma cor do texto */
-  text-decoration: none !important;    /* sem sublinhado */
-  cursor: default !important;           /* cursor padrão texto */
-  transition: color 0.3s ease;
+/* -------------------------
+   GRID DE POSTS / CARDS
+------------------------- */
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Estilo global para links: texto normal e hover só muda cor e cursor */
-a, a:visited {
-  color: inherit !important;
-  text-decoration: none !important;
-  cursor: default !important;
-  transition: color 0.3s ease;
-}
-
-a:hover, a:focus, a:active {
-  color: #fff !important;
-  cursor: pointer !important;
-  text-decoration: none !important;
-}
-
-/* Carrossel com fundo uniforme */
-#carouselMultiItemExample,
-#carouselMultiItemExample .carousel-inner,
-#carouselMultiItemExample .carousel-item {
+.post-card {
   background-color: #010007;
-  color: #ddd;
-  padding: 1rem 0;
-}
-.btn.btn-white.mt-auto{
-  border-style: solid;
-  border-color:#374f70;
-  margin-bottom:15px ;
-}
-.btn-white p{
-  color: #374f70;
-}
-#carouselMultiItemExample .card {
-  background-color: #010007;
-  border: none;
+  border: 1px solid #374f70;
   border-radius: 10px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
   color: #ddd;
-  font-family: 'Open Sans', sans-serif;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
-#carouselMultiItemExample .card:hover {
+.post-card:hover {
   box-shadow: 0 0 15px 4px #374f70;
   transform: translateY(-5px);
   background-color: #374f70;
 }
 
-#carouselMultiItemExample .card-title {
+.post-card img,
+.post-card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.post-card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.post-card-title {
   font-weight: 700;
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
   color: #fff;
 }
 
-p.card-text.text-muted {
-  font-weight: 400;
+.post-card-text {
+  flex-grow: 1;
+  color: #ccc;
   font-size: 1rem;
-  color: #ffffff;
   margin-bottom: 1rem;
 }
 
-
-
-
-#carouselMultiItemExample .carousel-control-prev-icon,
-#carouselMultiItemExample .carousel-control-next-icon {
-  filter: invert(100%);
+.post-card-link {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border: 1px solid #374f70;
+  border-radius: 6px;
+  color: #374f70;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#carouselMultiItemExample .carousel-control-prev,
-#carouselMultiItemExample .carousel-control-next {
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+.post-card-link:hover {
+  background-color: #374f70;
+  color: #fff;
+  text-decoration: none;
 }
 
-#carouselMultiItemExample .carousel-control-prev:hover,
-#carouselMultiItemExample .carousel-control-next:hover {
-  opacity: 1;
-}
-
-/* Footer com mesmo fundo */
+/* -------------------------
+   FOOTER
+------------------------- */
 footer {
   background-color: #010007;
   color: #bbb;
   padding: 2rem 1rem;
   margin-top: 4rem;
   text-align: center;
+  border-top: 1px solid #374f70;
 }
 
 footer ul.list-inline li a {
@@ -198,7 +205,16 @@ footer .small {
   font-size: 0.9rem;
 }
 
-/* Responsividade */
+/* -------------------------
+   RESPONSIVO
+------------------------- */
+@media (max-width: 992px) {
+  .post-card img,
+  .post-card-img-top {
+    height: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   header.masthead h1 {
     font-size: 2.5rem;
@@ -206,176 +222,82 @@ footer .small {
   header.masthead .subheading {
     font-size: 1.2rem;
   }
-  #mainNav .nav-link {
-    padding: 0.5rem 0.5rem;
+  .post-card img,
+  .post-card-img-top {
+    height: 120px;
   }
-  #carouselMultiItemExample .card-title {
-    font-size: 1.1rem;
-  }
-  #carouselMultiItemExample .card-text {
-    font-size: 0.9rem;
+  main.mb-4 {
+    padding: 1rem;
   }
 }
 
-.photo-gallery{
-  margin-top: 100px;
-  margin-bottom: 100px;
- 
-}
-.gallery-mosaic {
-   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  grid-auto-rows: 140px;
-  grid-auto-flow: dense; /* ESSENCIAL para “encaixar” */
-  gap: 8px;
-}
-
-/* Fotos base */
-.gallery-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px #374f70;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
-}
-
-/* Novo ajuste dos tamanhos */
-.gallery-photo.small {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
-.gallery-photo.medium {
-  grid-column: span 2;
-  grid-row: span 1; /* antes estava 2 → causava buracos */
-}
-
-.gallery-photo.large {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none !important; /* remove o ícone padrão */
-  width: 3rem;
-  height: 3rem;
-  position: relative;
-}
-
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: translate(-50%, -50%);
-}
-
-.carousel-control-prev-icon::after {
-  transform: translate(-50%, -50%) rotate(135deg);
-}
-
-.carousel-control-next-icon::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-/* Estilo para a página do elenco completo */
-.elenco-container {
-  background-color: #010007;
-  padding: 2rem 0;
-}
-
-.elenco-container .card {
-  background-color: #010007;
-  border: 1px solid #374f70;
-  border-radius: 10px;
-  color: #ddd;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.elenco-container .card:hover {
-  box-shadow: 0 0 15px 4px #374f70;
-  transform: translateY(-5px);
-}
-
-.elenco-container .card-img-top {
-  height: 500px; /* atualmente */
-  object-fit: cover;
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
-
-.elenco-container .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.elenco-container .card-title {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.elenco-container .card-text {
-  color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.elenco-container .btn-primary {
-  background-color: transparent;
-  border: 1px solid #374f70;
-  color: #374f70;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  align-self: flex-start;
-}
-
-.elenco-container .btn-primary:hover {
+/* -------------------------
+   BOTÕES ESPECÍFICOS
+------------------------- */
+.btn-primary {
   background-color: #374f70;
-  color: #fff;
+  border-color: #374f70;
 }
 
-/* Responsivo para colunas */
+.btn-primary:hover {
+  background-color: #556a8a;
+  border-color: #556a8a;
+}
+
+/* -------------------------
+   GALERIA ESTILO PINTEREST PARA ATOR
+------------------------- */
+body.ator-detalhe .galeria-pinterest {
+    column-count: 3;
+    column-gap: 1rem;
+    margin-top: 2rem;
+}
+
+body.ator-detalhe .galeria-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.ator-detalhe .galeria-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+body.ator-detalhe .galeria-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+body.ator-detalhe .galeria-item .legenda {
+    font-size: 0.9rem;
+    color: #ccc;
+    padding: 0.25rem;
+}
+
+/* Responsivo galeria */
 @media (max-width: 992px) {
-  .elenco-container .card-img-top {
-    height: 250px;
-  }
+    body.ator-detalhe .galeria-pinterest {
+        column-count: 2;
+    }
 }
 
-@media (max-width: 768px) {
-  .elenco-container .card-img-top {
-    height: 200px;
-  }
-}
-.elenco-container p strong {
-  color: #89a7d0; /* um azul claro legal e suave */
-  font-weight: 700;
+@media (max-width: 576px) {
+    body.ator-detalhe .galeria-pinterest {
+        column-count: 1;
+    }
 }
 
-.elenco-container p {
-  color: #ccc; /* um cinza claro para o texto */
-
-  margin-bottom: 0.5rem;
+/* -------------------------
+   ANIMAÇÃO FADE-IN PARA GALERIA
+------------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

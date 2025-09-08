@@ -1,0 +1,32 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block body_class %}ator-detalhe{% endblock body_class %}
+{% block title %}{{ ator.nome }} - {{ app.titulo }}{% endblock title %}
+
+{% block titulo %}{{ ator.nome }}{% endblock titulo %}
+{% block subtitulo %}{{ ator.apelido }}{% endblock subtitulo %}
+
+{% block content %}
+
+<!-- Card do ator sem imagem -->
+<div class="container mb-5">
+  <div class="card elenco-container p-4">
+    <h3 class="text-white">{{ ator.nome }} ({{ ator.apelido }})</h3>
+    <p><strong>Especialidade:</strong> {{ ator.especialidade }}</p>
+    <p style="color:#ddd; font-size:1.1rem;">{{ ator.descricao }}</p>
+    <a href="{% url 'elenco' %}" class="btn btn-primary mt-3">Voltar ao Elenco</a>
+  </div>
+</div>
+
+<!-- GALERIA ESTILO PINTEREST -->
+{% if imagens %}
+<div class="actor-gallery container mt-5">
+  {% for img in imagens %}
+    <div class="gallery-item">
+      <img src="{{ img.imagem.url }}" alt="{{ ator.nome }} - {{ forloop.counter }}">
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endblock content %}

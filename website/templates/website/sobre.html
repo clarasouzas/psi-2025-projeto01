@@ -1,23 +1,24 @@
-
 {% extends "website/base.html" %}
 {% load static %}
-{% block title %} Sobre {% endblock title %}
-{% block titulo %}Grey's Anatomy: Um Marco na TV{% endblock titulo %}
-{% block subtitulo %}Conheça a trajetória, o impacto e os personagens desta série icônica{% endblock subtitulo %}
-{% block header_image %}{% static 'website/img/sobreimg.jpg' %}{% endblock header_image %}
+
+{% block title %}Sobre - {{ app.titulo }}{% endblock title %}
+
+{% block titulo %}
+  {{ conteudo.titulo|default:"Sobre o Projeto" }}
+{% endblock titulo %}
+
+{% block subtitulo %}
+  {{ conteudo.subtitulo|default:"Informações e contexto" }}
+{% endblock subtitulo %}
 
 {% block content %}
-
-       
-<!-- Main Content-->
-<main class="mb-4">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>{{ conteudosobre | safe }}</p>
-            </div>
-        </div>
-    </div>
+<main class="mb-4 container-centered">
+  <div>
+    {% if conteudo.texto %}
+      <p>{{ conteudo.texto|linebreaks }}</p>
+    {% else %}
+      <p>Informações ainda não cadastradas.</p>
+    {% endif %}
+  </div>
 </main>
 {% endblock content %}
-

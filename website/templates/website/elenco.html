@@ -1,28 +1,34 @@
 {% extends "website/base.html" %}
 {% load static %}
 
-{% block title %}Detalhes do Ator - Greys Anatomy{% endblock %}
+{% block title %}Elenco - {{ app.titulo }}{% endblock title %}
 
-
-{% block titulo %}{{ ator.nome }}{% endblock %}
-
-{% block subtitulo %}Interpretado por {{ ator.ator }}{% endblock %}
+{% block titulo %}Elenco{% endblock titulo %}
+{% block subtitulo %}Confira todos os atores{% endblock subtitulo %}
 
 {% block content %}
- <section class="photo-gallery container py-9">
-  <div class="gallery-mosaic">
-    {% for img in imagens %}
-      <img src="{% static img.src %}" alt="{{ img.alt }}" class="gallery-photo {{ img.classe }}" />
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    {% for ator in elenco %}
+      <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
+        <div class="post-card">
+          <div>
+            {% if ator.imagem %}
+              <img src="{{ ator.imagem.url }}" alt="{{ ator.nome }}">
+            {% else %}
+              <img src="{% static 'app/img/sem-imagem.jpg' %}" alt="Sem imagem">
+            {% endif %}
+          </div>
+          <div class="post-card-body">
+            <h5 class="post-card-title">{{ ator.nome }}</h5>
+            <p class="post-card-text">{{ ator.descricao|truncatewords:20 }}</p>
+            <a href="{% url 'ator' ator.id %}" class="post-card-link">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <p class="text-center">Nenhum ator cadastrado.</p>
     {% endfor %}
   </div>
-</section>
-
-  <div class="container mb-5">
-    <div class="card elenco-container p-4">
-      <h3 class="text-white">{{ ator.nome }} ({{ ator.apelido }})</h3>
-      <p><strong>Especialidade:</strong> {{ ator.especialidade }}</p>
-      <p style="color:#ddd; font-size:1.1rem;">{{ ator.descricao }}</p>
-      <a href="{% url 'elenco_list' %}" class="btn btn-primary mt-3">Voltar ao Elenco</a>
-    </div>
-  </div>
-{% endblock %}
+</div>
+{% endblock content %}

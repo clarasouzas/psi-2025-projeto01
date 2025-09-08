@@ -1,76 +1,37 @@
 {% extends "website/base.html" %}
 {% load static %}
 
-{% block title %} Início {% endblock title %}
-{% block titulo %}Greys Anatomy{% endblock titulo %}
-{% block subtitulo %}Página de Fans{% endblock subtitulo %}
-{% block header_image %}{% static 'website/img/indeximg.jpg' %}{% endblock header_image %}
+{% block title %}Início - {{ app.titulo }}{% endblock title %}
+
+{% block titulo %}
+  {{ conteudo.titulo|default:"Bem-vindo" }}
+{% endblock titulo %}
+
+{% block subtitulo %}
+  {{ conteudo.subtitulo|default:"Confira os atores" }}
+{% endblock subtitulo %}
 
 {% block content %}
-
-
-<section class="photo-gallery container py-9">
-  <div class="gallery-mosaic">
-    <img src="{% static 'website/img/galeria1.jpg' %}" alt="Foto 1" class="gallery-photo large" />
-    <img src="{% static 'website/img/galeria2.jpg' %}" alt="Foto 2" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria3.webp' %}" alt="Foto 3" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria4.jpg' %}" alt="Foto 4" class="gallery-photo medium" />
-    <img src="{% static 'website/img/galeria5.webp' %}" alt="Foto 5" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria6.jpg' %}" alt="Foto 6" class="gallery-photo large" />
-    <img src="{% static 'website/img/galeria7.jpg' %}" alt="Foto 7" class="gallery-photo large" />
-    <img src="{% static 'website/img/galeria8.jpg' %}" alt="Foto 8" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria9.jpg' %}" alt="Foto 9" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria10.jpg' %}" alt="Foto 10" class="gallery-photo large" />
-    <img src="{% static 'website/img/galeria11.jpg' %}" alt="Foto 11" class="gallery-photo large" />
-    <img src="{% static 'website/img/galeria12.webp' %}" alt="Foto 12" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria13.jpg' %}" alt="Foto 13" class="gallery-photo medium" />
-    <img src="{% static 'website/img/galeria14.webp' %}" alt="Foto 14" class="gallery-photo small" />
-    <img src="{% static 'website/img/galeria15.webp' %}" alt="Foto 15" class="gallery-photo small" />
-
-  </div>
-</section>
-
-<!-- Carousel wrapper -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="false">
-
- 
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    {% for grupo in slides %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
-        <div class="container">
-          <div class="row">
-            {% for ator in grupo %}
-              <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
-                <div class="card h-100" style="width: 100%; max-width: 300px;">
-                  <div style="width: 100%; height: 450px; overflow: hidden;">
-                    <img src="{% static ator.imagem %}" class="card-img-top" alt="{{ ator.nome }}" style="width: 100%; height: 100%; object-fit: cover;">
-                  </div>
-                  <div class="card-body text-center d-flex flex-column">
-                    <h5 class="card-title">{{ ator.nome }}</h5>
-                    <p class="card-text text-muted">{{ ator.apelido }}</p>
-                    <a href="{% url 'elenco' id_post=ator.id %}" class="btn btn-white mt-auto">Ver mais</a>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
+<div class="container-centered">
+  <div class="posts-grid">
+    {% for ator in elenco %}
+    <div class="post-card">
+      <div>
+        {% if ator.imagem %}
+          <img src="{{ ator.imagem.url }}" alt="{{ ator.nome }}">
+        {% else %}
+          <img src="{% static 'app/img/sem-imagem.jpg' %}" alt="Sem imagem">
+        {% endif %}
       </div>
+      <div class="post-card-body">
+        <h5 class="post-card-title">{{ ator.nome }}</h5>
+        <p class="post-card-text">{{ ator.descricao|truncatewords:10 }}</p>
+        <a href="{% url 'ator' ator.pk %}" class="post-card-link">Ver detalhes</a>
+      </div>
+    </div>
+    {% empty %}
+      <p class="text-center">Nenhum ator disponível.</p>
     {% endfor %}
   </div>
-
 </div>
- <!-- Controls -->
-  <div class="d-flex justify-content-center mb-4">
-    <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
-  </div>
-
-{% endblock %}
+{% endblock content %}
