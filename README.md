@@ -16,7 +16,7 @@
 - Clone o repositório e entre na pasta do projeto:
 - Crie e ative um ambiente virtual:
 
-# Instale as dependências:
+-  Instale as dependências:
 
 `pip install -r requirements.txt`
 
@@ -36,7 +36,7 @@
 
 - Baixe as imagens e coloque nas pastas correspondentes:
 
-- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) 
+- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) br/
 media/personagem/   
 media/banner/       
 
