@@ -10,3 +10,42 @@
 ## Equipe 
 - Maria Clara Souza Silva
 - Willianny Ritchelly Amaro de Lima 
+
+## Instruções
+
+- Clone o repositório e entre na pasta do projeto:
+- Crie e ative um ambiente virtual:
+
+# Instale as dependências:
+
+`pip install -r requirements.txt`
+
+
+- Configure o banco de dados e crie um superuser:
+
+`python manage.py migrate`
+`python manage.py createsuperuser`
+
+
+- Instale as fixtures do projeto:
+
+`python manage.py loaddata atores.json`
+`python manage.py loaddata conteudo_pagina.json`
+`python manage.py loaddata app.json`
+
+
+- Baixe as imagens e coloque nas pastas correspondentes:
+
+- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) 
+media/personagem/   
+media/banner/       
+
+
+- Rode o servidor:
+
+`python manage.py runserver`
+
+
+Acesse o site no navegador em http://127.0.0.1:8000/
+
+Faça login no admin com o superuser criado para gerenciar atores, conteúdo das páginas e configurações do site.
