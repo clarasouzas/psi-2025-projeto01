@@ -34,11 +34,10 @@
 `python manage.py loaddata app.json`  <br/>
 
 
-- Baixe as imagens e coloque nas pastas correspondentes:
+- Baixe as imagens [Imagens](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) e coloque nas pastas correspondentes:
 
-- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link)  <br/>
-media/personagem/    <br/>
-media/banner/       
+`media/personagem/`    <br/>
+`media/banner/`      
 
 
 - Rode o servidor:
