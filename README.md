@@ -23,21 +23,21 @@
 
 - Configure o banco de dados e crie um superuser:
 
-`python manage.py migrate`
+`python manage.py migrate`  <br/>
 `python manage.py createsuperuser`
 
 
 - Instale as fixtures do projeto:
 
-`python manage.py loaddata atores.json`
-`python manage.py loaddata conteudo_pagina.json`
-`python manage.py loaddata app.json`
+`python manage.py loaddata atores.json`  <br/>
+`python manage.py loaddata conteudo_pagina.json`  <br/>
+`python manage.py loaddata app.json`  <br/>
 
 
 - Baixe as imagens e coloque nas pastas correspondentes:
 
-- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) br/
-media/personagem/   
+- [Media](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link)  <br/>
+media/personagem/    <br/>
 media/banner/       
 
 
