@@ -19,15 +19,15 @@ def sobre(request):
 def elenco(request):
     context = {
         "elenco": Ator.objects.order_by('-id'),
+        "conteudo": ConteudoPagina.objects.filter(pagina='elenco').first(),
         "app": App.objects.first(),
     }
     return render(request, "website/elenco.html", context)
 
+
 def ator(request, id_ator):
-    ator = get_object_or_404(Ator,id = id_ator)
-    imagens = ator.imagens.all()
+    ator = get_object_or_404(Ator,id=id_ator)
     context = {
-        "imagens" : imagens,
         "ator": ator,
         "app": App.objects.first(),
     }

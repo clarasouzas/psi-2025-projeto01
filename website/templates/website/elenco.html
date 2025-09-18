@@ -3,8 +3,13 @@
 
 {% block title %}Elenco - {{ app.titulo }}{% endblock title %}
 
-{% block titulo %}Elenco{% endblock titulo %}
-{% block subtitulo %}Confira todos os atores{% endblock subtitulo %}
+{% block titulo %}
+  {{ conteudo.titulo|default:"Elenco Greys" }}
+{% endblock titulo %}
+
+{% block subtitulo %}
+  {{ conteudo.subtitulo|default:"Conheça aqueles que marcaram a história do Seattle Grace" }}
+{% endblock subtitulo %}
 
 {% block content %}
 <div class="container mt-5">

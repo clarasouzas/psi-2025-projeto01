@@ -1,0 +1,123 @@
+[
+  {
+    "model": "website.ator",
+    "pk": 1,
+    "fields": {
+      "nome": "Meredith Grey",
+      "apelido": "A Grey",
+      "especialidade": "Cirurgia Geral",
+      "descricao": "Meredith é a protagonista da série, conhecida por sua resiliência e determinação. Desde seu primeiro dia no hospital, ela enfrenta desafios médicos complexos, crises pessoais e dilemas éticos, sempre tentando equilibrar sua carreira com a vida pessoal e a família. Ao longo da série, ela evolui como médica e pessoa, lidando com perdas, amor e superação.",
+      "imagem": "personagem/01.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 2,
+    "fields": {
+      "nome": "Derek Shepherd",
+      "apelido": "McDreamy",
+      "especialidade": "Neurocirurgia",
+      "descricao": "Derek é um neurocirurgião talentoso e carismático, conhecido por sua habilidade cirúrgica excepcional e por sua relação romântica com Meredith Grey. Ele enfrenta altos e baixos em sua vida profissional e pessoal, mas sempre mantém sua dedicação aos pacientes e à medicina, tornando-se um mentor respeitado e uma figura inspiradora no hospital.",
+      "imagem": "personagem/02.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 3,
+    "fields": {
+      "nome": "Lexie Grey",
+      "apelido": "Lexie",
+      "especialidade": "Cirurgia Geral",
+      "descricao": "Lexie é conhecida por sua inteligência, memória fotográfica e simpatia com todos no hospital. Ela tem grande empatia com os pacientes e colegas, mas lida com inseguranças familiares e profissionais. Ao longo do tempo, se mostra uma cirurgiã excepcional e uma pessoa dedicada a manter relações profundas e significativas com sua família e amigos.",
+      "imagem": "personagem/03.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 4,
+    "fields": {
+      "nome": "Mark Sloan",
+      "apelido": "McSteamy",
+      "especialidade": "Cirurgia Plástica",
+      "descricao": "Mark é um cirurgião plástico extremamente talentoso e confiante, conhecido tanto por sua habilidade quanto por seu charme. Apesar de seu exterior provocador, ele demonstra lealdade e cuidado com seus amigos próximos e pacientes. Ao longo da série, enfrenta desafios pessoais e profissionais, mostrando crescimento emocional e profissional.",
+      "imagem": "personagem/04.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 5,
+    "fields": {
+      "nome": "Jackson Avery",
+      "apelido": "Avery",
+      "especialidade": "Cirurgia Plástica",
+      "descricao": "Jackson é um cirurgião plástico talentoso, dedicado e focado. Ele vem de uma família de médicos renomados, o que gera pressão constante. Ao longo da série, desenvolve sua carreira, enfrenta dilemas amorosos e familiares, mas sempre busca ser ético, competente e humano em todas as suas decisões médicas e pessoais.",
+      "imagem": "personagem/05.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 6,
+    "fields": {
+      "nome": "Miranda Bailey",
+      "apelido": "The Nazi",
+      "especialidade": "Cirurgia Geral",
+      "descricao": "Bailey é uma cirurgiã experiente e exigente, conhecida por sua disciplina rígida e expectativas altas com residentes. Apesar de sua postura severa, ela demonstra grande compaixão e cuidado com os pacientes e colegas. Sua evolução ao longo da série mostra sua habilidade de equilibrar exigência profissional com empatia pessoal.",
+      "imagem": "personagem/06.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 7,
+    "fields": {
+      "nome": "Cristina Yang",
+      "apelido": "Cristina",
+      "especialidade": "Cardiotorácica",
+      "descricao": "Cristina é uma cirurgiã brilhante e extremamente competitiva, sempre buscando ser a melhor. Focada e determinada, muitas vezes parece fria e distante, mas mantém uma amizade profunda e leal com Meredith. Sua trajetória mostra desafios emocionais e profissionais, provando sua dedicação à medicina e à excelência cirúrgica.",
+      "imagem": "personagem/07.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 8,
+    "fields": {
+      "nome": "Addison Montgomery",
+      "apelido": "Addison",
+      "especialidade": "Cirurgia Fetal",
+      "descricao": "Addison é uma cirurgiã fetal talentosa e confiante, conhecida por seu charme e competência. Ela lida com complexidades familiares e profissionais, mantendo um equilíbrio delicado entre vida pessoal e carreira. Ao longo da série, demonstra empatia, inteligência e habilidade cirúrgica excepcional.",
+      "imagem": "personagem/08.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 9,
+    "fields": {
+      "nome": "Alex Karev",
+      "apelido": "Alex",
+      "especialidade": "Pediatria e Cirurgia Geral",
+      "descricao": "Alex inicia como residente arrogante e impulsivo, mas cresce profissional e emocionalmente ao longo da série. Ele desenvolve habilidades excepcionais em pediatria e cirurgia geral, mostrando empatia, coragem e determinação. Suas relações com colegas e pacientes revelam seu lado sensível e comprometido com a medicina.",
+      "imagem": "personagem/09.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 10,
+    "fields": {
+      "nome": "Jo Wilson",
+      "apelido": "Jo",
+      "especialidade": "Cirurgia Geral",
+      "descricao": "Jo é uma cirurgiã dedicada e resiliente, enfrentando desafios pessoais e profissionais. Ela busca se afirmar no hospital, mantendo integridade e dedicação com pacientes e colegas. Sua trajetória mostra superação, empatia e crescimento constante como médica e pessoa.",
+      "imagem": "personagem/10.jpg"
+    }
+  },
+  {
+    "model": "website.ator",
+    "pk": 11,
+    "fields": {
+      "nome": "Callie Torres",
+      "apelido": "Callie",
+      "especialidade": "Ortopedia",
+      "descricao": "Callie é uma ortopedista talentosa e apaixonada por sua profissão. Ela enfrenta desafios emocionais, relacionamentos complexos e dilemas éticos, sempre buscando equilíbrio entre vida pessoal e carreira. É conhecida por sua personalidade forte, senso de humor e dedicação aos pacientes.",
+      "imagem": "personagem/11.jpg"
+    }
+  }
+]

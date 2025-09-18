@@ -11,18 +11,14 @@ class Ator(models.Model):
     def __str__(self):
         return self.nome
     
-class AtorImagem(models.Model):
-    ator = models.ForeignKey(Ator, on_delete=models.CASCADE, related_name='imagens')
-    imagem = models.ImageField(upload_to='atores_galeria/')
-    legenda = models.CharField(max_length=200, blank=True)
 
-    def __str__(self):
-        return f"Imagem de {self.ator.nome}"
     
 class ConteudoPagina(models.Model):
     PAGINAS = [
         ('inicio', 'Início'),
         ('sobre', 'Sobre'),
+        ('elenco', 'Elenco'),
+
         
     ]
     pagina = models.CharField(max_length=20, choices=PAGINAS, unique=True)

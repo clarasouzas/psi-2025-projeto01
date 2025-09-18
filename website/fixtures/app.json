@@ -1,0 +1,17 @@
+[
+  {
+    "model": "website.app",
+    "pk": 1,
+    "fields": {
+      "titulo": "Grey's Anatomy",
+      "instagram": "https://www.instagram.com/greysanatomy",
+      "youtube": "https://www.youtube.com/channel/UCGreysAnatomy",
+      "x": "https://twitter.com/greysanatomy",
+      "facebook": "https://www.facebook.com/greysanatomy",
+      "linkedin": "",
+      "tiktok": "",
+      "copyright": "Grey's Anatomy ",
+      "ano": 2025
+    }
+  }
+]
