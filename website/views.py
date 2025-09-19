@@ -27,8 +27,10 @@ def elenco(request):
 
 def ator(request, id_ator):
     ator = get_object_or_404(Ator,id=id_ator)
+    imagens = ator.imagens.all()
     context = {
         "ator": ator,
+        "imagens": imagens,
         "app": App.objects.first(),
     }
     return render(request, "website/ator.html", context)

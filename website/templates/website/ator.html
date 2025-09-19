@@ -9,7 +9,6 @@
 
 {% block content %}
 
-<!-- ===== CARTÃO DO ATOR ===== -->
 <div class="container mb-5">
   <div class="ator-detalhe-card">
     <p><strong>Especialidade:</strong> {{ ator.especialidade }}</p>
@@ -18,5 +17,12 @@
   </div>
 </div>
 
+<div class="pinterest-gallery">
+  {% for img in imagens %}
+  <div class="pinterest-item">
+    <img src="{{ img.imagem.url }}" alt="{{ ator.nome }}">
+  </div>
+  {% endfor %}
+</div>
 
 {% endblock content %}

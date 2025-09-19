@@ -1,6 +1,4 @@
-/* -------------------------
-   RESET E BASE
-------------------------- */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -10,9 +8,7 @@ body, html {
   min-height: 100vh;
 }
 
-/* -------------------------
-   NAVBAR
-------------------------- */
+
 #mainNav {
   background-color: #010007;
   padding: 0.75rem 1rem;
@@ -37,9 +33,7 @@ body, html {
   color: #374f70;
 }
 
-/* -------------------------
-   HEADER
-------------------------- */
+
 header.masthead {
   position: relative;
   height: 100vh;
@@ -83,14 +77,12 @@ header.masthead .subheading {
   text-shadow: 0 1px 4px rgba(0,0,0,0.9);
 }
 
-/* Header menor apenas na página do ator detalhado */
+
 body.ator-detalhe header.masthead {
   height: 50vh;
 }
 
-/* -------------------------
-   ÁREA DE CONTEÚDO
-------------------------- */
+
 .container-centered,
 main.mb-4 {
   background-color: #010007;
@@ -102,9 +94,7 @@ main.mb-4 {
   font-size: 1.1rem;
 }
 
-/* -------------------------
-   GRID DE POSTS / CARDS
-------------------------- */
+
 .posts-grid {
   display: flex;
   flex-wrap: wrap;
@@ -179,9 +169,7 @@ main.mb-4 {
   text-decoration: none;
 }
 
-/* -------------------------
-   CARTÃO DO ATOR DETALHADO
-------------------------- */
+
 .ator-detalhe-card {
   background-color: #010007;
   border: 2px solid #374f70;
@@ -237,9 +225,7 @@ main.mb-4 {
 }
 
 
-/* -------------------------
-   FOOTER
-------------------------- */
+
 footer {
   background-color: #010007;
   color: #bbb;
@@ -263,15 +249,13 @@ footer .small {
   font-size: 0.9rem;
 }
 
-/* -------------------------
-   RESPONSIVO
-------------------------- */
+
 @media (max-width: 650px) {
   .gallery-2cols {
-    grid-template-columns: 1fr; /* 1 coluna no mobile */
+    grid-template-columns: 1fr; 
   }
   .gallery-item {
-    width: 90%; /* ocupa quase toda a tela */
+    width: 90%; 
     height: 180px;
   }
 }
@@ -292,9 +276,7 @@ footer .small {
   }
 }
 
-/* -------------------------
-   BOTÕES ESPECÍFICOS
-------------------------- */
+
 .btn-primary {
   background-color: #374f70;
   border-color: #374f70;
@@ -311,4 +293,30 @@ footer .small {
   margin-top: 100px;
   width: 95%;
   text-align: center;
+}
+
+.pinterest-gallery {
+  column-count: 2;
+  column-gap: 15px;
+  margin: 20px;
+}
+
+.pinterest-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+.pinterest-item img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pinterest-item img:hover {
+  transform: scale(1.03);
+}
+
+@media(max-width:768px){
+  .pinterest-gallery { column-count: 1; }
 }

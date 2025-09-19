@@ -11,6 +11,12 @@ class Ator(models.Model):
     def __str__(self):
         return self.nome
     
+class Galeria(models.Model):
+    ator = models.ForeignKey(Ator, related_name="imagens", on_delete=models.CASCADE)
+    imagem = models.ImageField(upload_to="galeria/")
+
+    def __str__(self):
+        return f"{self.ator.nome} - {self.id}"
 
     
 class ConteudoPagina(models.Model):
