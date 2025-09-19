@@ -12,26 +12,50 @@
 {% endblock subtitulo %}
 
 {% block content %}
-<div class="container-centered">
-  <div class="posts-grid">
-    {% for ator in elenco %}
-    <div class="post-card">
-      <div>
-        {% if ator.imagem %}
-          <img src="{{ ator.imagem.url }}" alt="{{ ator.nome }}">
-        {% else %}
-          <img src="{% static 'app/img/sem-imagem.jpg' %}" alt="Sem imagem">
+<div class="carrossel">
+
+  <div id="elencoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      {% for ator in elenco %}
+        {% if forloop.first or forloop.counter0|divisibleby:3 %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="d-flex justify-content-center gap-3 ">
         {% endif %}
-      </div>
-      <div class="post-card-body">
-        <h5 class="post-card-title">{{ ator.nome }}</h5>
-        <p class="post-card-text">{{ ator.descricao|truncatewords:10 }}</p>
-        <a href="{% url 'ator' ator.pk %}" class="post-card-link">Ver detalhes</a>
-      </div>
+
+            <div class="post-card">
+              <div>
+                {% if ator.imagem %}
+                  <img src="{{ ator.imagem.url }}" alt="{{ ator.nome }}">
+                {% else %}
+                  <img src="{% static 'app/img/sem-imagem.jpg' %}" alt="Sem imagem">
+                {% endif %}
+              </div>
+              <div class="post-card-body">
+                <h5 class="post-card-title">{{ ator.nome }}</h5>
+                <p class="post-card-text">{{ ator.descricao|truncatewords:10 }}</p>
+                <a href="{% url 'ator' ator.pk %}" class="post-card-link">Ver detalhes</a>
+              </div>
+            </div>
+
+        {% if forloop.counter|divisibleby:3 or forloop.last %}
+          </div>
+        </div>
+        {% endif %}
+      {% empty %}
+        <p class="text-center">Nenhum ator disponível.</p>
+      {% endfor %}
+
     </div>
-    {% empty %}
-      <p class="text-center">Nenhum ator disponível.</p>
-    {% endfor %}
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#elencoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#elencoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
+
 </div>
 {% endblock content %}
