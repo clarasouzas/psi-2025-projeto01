@@ -32,6 +32,7 @@
 `python manage.py loaddata atores.json`  <br/>
 `python manage.py loaddata conteudo_pagina.json`  <br/>
 `python manage.py loaddata app.json`  <br/>
+`python manage.py loaddata galeria_ator.json` 
 
 
 - Baixe as [Imagens](https://drive.google.com/drive/folders/1IUxVk0ELzVMlgMAJW_jRmYQOZ9CH3JAk?usp=drive_link) e coloque nas pastas correspondentes:
